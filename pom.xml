@@ -8,6 +8,7 @@
 	<properties>
 		<swt.version>4.3</swt.version>
 		<jface.version>3.3.0-I20070606-0010</jface.version>
+		<miglayout.version>3.7.4</miglayout.version>
 	</properties>
 
 	<dependencies>
@@ -23,6 +24,13 @@
 			<artifactId>org.eclipse.swt.win32.win32.x86_64</artifactId>
 			<version>${swt.version}</version>
 		</dependency>
+
+		<dependency>
+			<groupId>com.miglayout</groupId>
+			<artifactId>miglayout</artifactId>
+			<version>${miglayout.version}</version>
+		</dependency>
+
 
 	</dependencies>
 
