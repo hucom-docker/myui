@@ -439,14 +439,23 @@ public class PrivilegeMainViewer extends Shell {
 	    TabItem tabItem_privilege_detail = new TabItem(tabFolder, SWT.NONE);
 	    tabItem_privilege_detail.setText("权限详情");
 	    
-	    Composite composite = new Composite(tabFolder, SWT.NONE);
+	    Composite composite2 = new Composite(tabFolder, SWT.NONE);
+	    GridLayout gl_composite2 = new GridLayout(1, false);
+	    gl_composite2.verticalSpacing = 0;
+	    gl_composite2.marginWidth = 0;
+	    gl_composite2.marginHeight = 0;
+	    composite2.setLayout(gl_composite2);
+	    tabItem_privilege_detail.setControl(composite2);
+	    
+	    Composite composite = new Composite(composite2, SWT.NONE);
+	    composite.setLayoutData(new GridData(SWT.CENTER, SWT.CENTER, true, true, 1, 1));
 	    GridLayout gl_composite = new GridLayout(4, false);
-	    gl_composite.marginTop = 20;
+	    gl_composite.horizontalSpacing = 10;
 	    gl_composite.verticalSpacing = 10;
 	    gl_composite.marginHeight = 0;
 	    gl_composite.marginWidth = 0;
 	    composite.setLayout(gl_composite);
-	    tabItem_privilege_detail.setControl(composite);
+	   
 	    
 	    Label label = new Label(composite, SWT.NONE);
 	    label.setLayoutData(new GridData(SWT.RIGHT, SWT.CENTER, false, false, 1, 1));
